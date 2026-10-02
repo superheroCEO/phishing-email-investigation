@@ -1,0 +1,47 @@
+# Endpoint Telemetry Log
+
+# Source
+# Simulated EDR telemetry from WIN-EMP-042
+# Investigation window: 2026-09-29 09:00:00 - 10:30:00 -0700
+
+2026-09-29 09:17:34 PROCESS device=WIN-EMP-042 user=employee parent="explorer.exe" process="chrome.exe" pid=8420 command_line="chrome.exe --profile-directory=Default" action=START
+
+2026-09-29 09:17:35 NETWORK device=WIN-EMP-042 user=employee process="chrome.exe" pid=8420 remote_domain="northstar-hr-support.example" remote_ip=203.0.113.45 remote_port=443 direction=OUTBOUND action=ALLOW
+
+2026-09-29 09:17:37 FILE device=WIN-EMP-042 user=employee process="chrome.exe" pid=8420 path="C:\Users\employee\AppData\Local\Google\Chrome\User Data\Default\Cache\Cache_Data\data_4f8a" operation=CREATE file_type="HTML" action=ALLOW
+
+2026-09-29 09:17:38 NETWORK device=WIN-EMP-042 user=employee process="chrome.exe" pid=8420 remote_domain="northstar-hr-support.example" remote_ip=203.0.113.45 remote_port=443 direction=OUTBOUND action=ALLOW
+
+2026-09-29 09:17:39 FILE device=WIN-EMP-042 user=employee process="chrome.exe" pid=8420 path="C:\Users\employee\Downloads\Direct_Deposit_Verification.html" operation=CREATE file_type="HTML" sha256="7f3c1a8e9d4b2f6c5a7e8d1f0b3c4a5d6e7f8091a2b3c4d5e6f708192a3b4c5d" action=ALLOW
+
+2026-09-29 09:17:40 FILE device=WIN-EMP-042 user=employee process="chrome.exe" pid=8420 path="C:\Users\employee\Downloads\Direct_Deposit_Verification.html" operation=MODIFY file_type="HTML" action=ALLOW
+
+2026-09-29 09:17:40 FILE device=WIN-EMP-042 user=employee process="chrome.exe" pid=8420 path="C:\Users\employee\AppData\Local\Temp\update.dll" operation=CREATE file_type="PE32" sha256="91b7c4e5d2a8f6b3c1e9d7a5f4b2c8e6d0a1f3b5c7e9d2a4f6b8c0e1d3f5a7b9" action=ALLOW
+
+2026-09-29 09:17:41 PROCESS device=WIN-EMP-042 user=employee parent="chrome.exe" process="rundll32.exe" pid=8464 command_line="rundll32.exe C:\Users\employee\AppData\Local\Temp\update.dll,Start" action=START
+
+2026-09-29 09:17:41 FILE device=WIN-EMP-042 user=employee process="rundll32.exe" pid=8464 path="C:\Users\employee\AppData\Local\Temp\update.dll" operation=READ file_type="PE32" sha256="91b7c4e5d2a8f6b3c1e9d7a5f4b2c8e6d0a1f3b5c7e9d2a4f6b8c0e1d3f5a7b9" action=DETECT detection="Suspicious DLL Execution"
+
+2026-09-29 09:17:41 PROCESS device=WIN-EMP-042 user=employee parent="chrome.exe" process="rundll32.exe" pid=8464 command_line="rundll32.exe C:\Users\employee\AppData\Local\Temp\update.dll,Start" action=TERMINATE reason="EDR prevention"
+
+2026-09-29 09:17:41 FILE device=WIN-EMP-042 user=employee process="rundll32.exe" pid=8464 path="C:\Users\employee\AppData\Local\Temp\update.dll" operation=QUARANTINE action=PREVENT
+
+2026-09-29 09:17:42 NETWORK device=WIN-EMP-042 user=employee process="chrome.exe" pid=8420 remote_domain="login.northstar-hr-support.example" remote_ip=203.0.113.45 remote_port=443 direction=OUTBOUND action=ALLOW
+
+2026-09-29 09:17:44 PROCESS device=WIN-EMP-042 user=employee parent="chrome.exe" process="chrome.exe" pid=8501 command_line="chrome.exe --new-window https://www.google.com/search?q=direct+deposit+verification" action=START
+
+2026-09-29 09:18:03 NETWORK device=WIN-EMP-042 user=employee process="chrome.exe" pid=8501 remote_domain="www.google.com" remote_ip=142.250.72.36 remote_port=443 direction=OUTBOUND action=ALLOW
+
+2026-09-29 09:18:21 PROCESS device=WIN-EMP-042 user=employee parent="chrome.exe" process="chrome.exe" pid=8520 command_line="chrome.exe --new-tab https://www.northstar.example/security/report-phishing" action=START
+
+2026-09-29 09:18:22 NETWORK device=WIN-EMP-042 user=employee process="chrome.exe" pid=8520 remote_domain="www.northstar.example" remote_ip=192.0.2.25 remote_port=443 direction=OUTBOUND action=ALLOW
+
+2026-09-29 09:19:04 FILE device=WIN-EMP-042 user=employee process="chrome.exe" pid=8420 path="C:\Users\employee\Downloads\Direct_Deposit_Verification.html" operation=DELETE action=ALLOW
+
+2026-09-29 09:19:06 PROCESS device=WIN-EMP-042 user=employee parent="explorer.exe" process="chrome.exe" pid=8420 action=EXIT
+
+2026-09-29 09:31:00 NETWORK device=WIN-EMP-042 user=employee process="chrome.exe" pid=8501 remote_domain="northstar-hr-support.example" remote_ip=203.0.113.45 remote_port=443 direction=OUTBOUND action=BLOCK reason="Threat intelligence"
+
+2026-09-29 09:31:01 PROCESS device=WIN-EMP-042 user=employee parent="chrome.exe" process="chrome.exe" pid=8501 action=EXIT
+
+# End of telemetry

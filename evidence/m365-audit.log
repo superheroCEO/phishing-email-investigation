@@ -1,0 +1,51 @@
+# Microsoft 365 Audit Telemetry
+
+# Source
+
+# Simulated Microsoft 365 / Exchange Online audit telemetry
+
+# Investigation window: 2026-09-29 09:00:00 - 10:30:00 -0700
+
+2026-09-29 09:17:42 MAIL_DELIVERY operation=Deliver user=[employee@northstar.example](mailto:employee@northstar.example) sender=[payroll@northstar-hr-support.example](mailto:payroll@northstar-hr-support.example) subject="Action Required: Update Your Direct Deposit Information" message_id="[20260929091735.4F7A91@mail.northstar-hr-support.example](mailto:20260929091735.4F7A91@mail.northstar-hr-support.example)" folder="Inbox" result=SUCCESS
+
+2026-09-29 09:17:47 MAIL_ACCESS operation=MessageBind user=[employee@northstar.example](mailto:employee@northstar.example) folder="Inbox" subject="Action Required: Update Your Direct Deposit Information" message_id="[20260929091735.4F7A91@mail.northstar-hr-support.example](mailto:20260929091735.4F7A91@mail.northstar-hr-support.example)" client="OutlookWeb" result=SUCCESS
+
+2026-09-29 09:17:48 MAIL_ACCESS operation=MessageRead user=[employee@northstar.example](mailto:employee@northstar.example) folder="Inbox" subject="Action Required: Update Your Direct Deposit Information" message_id="[20260929091735.4F7A91@mail.northstar-hr-support.example](mailto:20260929091735.4F7A91@mail.northstar-hr-support.example)" client="OutlookWeb" result=SUCCESS
+
+2026-09-29 09:18:22 MAIL_REPORT operation=ReportMessage user=[employee@northstar.example](mailto:employee@northstar.example) message_id="[20260929091735.4F7A91@mail.northstar-hr-support.example](mailto:20260929091735.4F7A91@mail.northstar-hr-support.example)" category="Phishing" result=SUCCESS
+
+2026-09-29 09:18:24 MAIL_MOVE operation=MoveToDeletedItems user=[employee@northstar.example](mailto:employee@northstar.example) message_id="[20260929091735.4F7A91@mail.northstar-hr-support.example](mailto:20260929091735.4F7A91@mail.northstar-hr-support.example)" source_folder="Inbox" destination_folder="Deleted Items" result=SUCCESS
+
+2026-09-29 09:18:26 MAIL_DELETE operation=SoftDelete user=[employee@northstar.example](mailto:employee@northstar.example) message_id="[20260929091735.4F7A91@mail.northstar-hr-support.example](mailto:20260929091735.4F7A91@mail.northstar-hr-support.example)" folder="Deleted Items" result=SUCCESS
+
+2026-09-29 09:19:03 MAIL_SEARCH operation=SearchMailbox user=[employee@northstar.example](mailto:employee@northstar.example) search_query="direct deposit verification" result=SUCCESS
+
+2026-09-29 09:19:27 MAIL_ACCESS operation=MessageBind user=[employee@northstar.example](mailto:employee@northstar.example) folder="Inbox" subject="Payroll Processing Schedule" message_id="[20260927084512.19A3B2@mail.northstar.example](mailto:20260927084512.19A3B2@mail.northstar.example)" client="OutlookWeb" result=SUCCESS
+
+2026-09-29 09:22:05 MAIL_REPORT operation=ReportMessage user=[employee@northstar.example](mailto:employee@northstar.example) message_id="[20260929091735.4F7A91@mail.northstar-hr-support.example](mailto:20260929091735.4F7A91@mail.northstar-hr-support.example)" category="Phishing" result=SUCCESS
+
+2026-09-29 09:23:11 MAIL_DELETE operation=SoftDelete user=[employee@northstar.example](mailto:employee@northstar.example) message_id="[20260929091735.4F7A91@mail.northstar-hr-support.example](mailto:20260929091735.4F7A91@mail.northstar-hr-support.example)" folder="Deleted Items" result=SUCCESS
+
+2026-09-29 09:24:38 MAILBOX_SETTINGS operation=InboxRuleList user=[employee@northstar.example](mailto:employee@northstar.example) result=SUCCESS rule_count=0
+
+2026-09-29 09:24:41 MAILBOX_SETTINGS operation=MailboxForwarding user=[employee@northstar.example](mailto:employee@northstar.example) forwarding_enabled=false result=SUCCESS
+
+2026-09-29 09:24:44 MAILBOX_SETTINGS operation=DelegateAccessList user=[employee@northstar.example](mailto:employee@northstar.example) result=SUCCESS unexpected_delegates=0
+
+2026-09-29 09:25:03 AUTH_AUDIT operation=SessionReview user=[employee@northstar.example](mailto:employee@northstar.example) result=SUCCESS suspicious_sessions=0
+
+2026-09-29 09:26:17 MAILBOX_SETTINGS operation=InboxRuleList user=[employee@northstar.example](mailto:employee@northstar.example) result=SUCCESS rule_count=0
+
+2026-09-29 09:28:51 MAIL_SEARCH operation=SearchMailbox user=[employee@northstar.example](mailto:employee@northstar.example) search_query="northstar-hr-support.example" result=SUCCESS
+
+2026-09-29 09:34:12 MAIL_ACCESS operation=MessageBind user=[employee@northstar.example](mailto:employee@northstar.example) folder="Deleted Items" subject="Action Required: Update Your Direct Deposit Information" message_id="[20260929091735.4F7A91@mail.northstar-hr-support.example](mailto:20260929091735.4F7A91@mail.northstar-hr-support.example)" client="OutlookWeb" result=SUCCESS
+
+2026-09-29 09:34:29 MAIL_DELETE operation=HardDelete user=[employee@northstar.example](mailto:employee@northstar.example) message_id="[20260929091735.4F7A91@mail.northstar-hr-support.example](mailto:20260929091735.4F7A91@mail.northstar-hr-support.example)" folder="Deleted Items" result=SUCCESS
+
+2026-09-29 09:41:55 MAILBOX_SETTINGS operation=MailboxForwarding user=[employee@northstar.example](mailto:employee@northstar.example) forwarding_enabled=false result=SUCCESS
+
+2026-09-29 10:02:37 AUTH_AUDIT operation=SessionReview user=[employee@northstar.example](mailto:employee@northstar.example) result=SUCCESS suspicious_sessions=0
+
+2026-09-29 10:17:48 AUTH_AUDIT operation=SessionReview user=[employee@northstar.example](mailto:employee@northstar.example) result=SUCCESS suspicious_sessions=0
+
+# End of telemetry

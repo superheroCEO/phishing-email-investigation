@@ -1,0 +1,48 @@
+Delivered-To: employee@northstar.example
+Received: from mx1.freehostserver.net (198.51.100.77)
+    by mx.northstar.example with ESMTP id 7F4A21B9
+    for <employee@northstar.example>;
+    Tue, 29 Sep 2026 09:17:42 -0700
+
+Received: from mail.northstar-hr-support.example (203.0.113.45)
+    by mx1.freehostserver.net with ESMTP;
+    Tue, 29 Sep 2026 09:17:38 -0700
+
+Return-Path: <payroll@northstar-hr-support.example>
+From: "Payroll Department" <payroll@northstar-hr-support.example>
+To: employee@northstar.example
+Reply-To: payroll-team@protonmail.com
+Subject: Action Required: Update Your Direct Deposit Information
+Date: Tue, 29 Sep 2026 09:17:35 -0700
+Message-ID: <20260929091735.4F7A91@mail.northstar-hr-support.example>
+
+Authentication-Results: mx.northstar.example;
+    spf=softfail
+        smtp.mailfrom=northstar-hr-support.example;
+    dkim=none;
+    dmarc=fail
+        header.from=northstar-hr-support.example
+
+Received-SPF: SoftFail
+    (mx.northstar.example: domain of northstar-hr-support.example
+    does not designate 203.0.113.45 as permitted sender)
+
+MIME-Version: 1.0
+Content-Type: text/html; charset="UTF-8"
+
+<html>
+<body>
+<p><strong>Payroll Department</strong></p>
+
+<p>Action required: Please verify your direct deposit information
+to avoid interruption to your next payroll payment.</p>
+
+<p>
+<a href="https://northstar-hr-support.example/payroll/verify">
+Verify Direct Deposit Information
+</a>
+</p>
+
+<p>Please complete this verification as soon as possible.</p>
+</body>
+</html>

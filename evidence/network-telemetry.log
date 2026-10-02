@@ -1,0 +1,37 @@
+# Network Telemetry Log
+
+# Source
+
+# Simulated proxy / DNS / firewall telemetry
+
+# Investigation window: 2026-09-29 09:00:00 - 10:00:00 -0700
+
+2026-09-29 09:17:35 PROXY action=ALLOW src_ip=10.20.14.57 src_user=[employee@northstar.example](mailto:employee@northstar.example) dst_domain=northstar-hr-support.example dst_ip=203.0.113.45 method=GET uri=/payroll/verify status=200 bytes_out=842 bytes_in=18432 user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/140.0.0.0"
+
+2026-09-29 09:17:35 DNS src_ip=10.20.14.57 query=northstar-hr-support.example type=A response=203.0.113.45
+
+2026-09-29 09:17:36 PROXY action=ALLOW src_ip=10.20.14.57 src_user=[employee@northstar.example](mailto:employee@northstar.example) dst_domain=northstar-hr-support.example dst_ip=203.0.113.45 method=POST uri=/payroll/verify status=302 bytes_out=1462 bytes_in=512 user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/140.0.0.0"
+
+2026-09-29 09:17:36 PROXY action=ALLOW src_ip=10.20.14.57 src_user=[employee@northstar.example](mailto:employee@northstar.example) dst_domain=northstar-hr-support.example dst_ip=203.0.113.45 method=GET uri=/payroll/verify/complete status=200 bytes_out=731 bytes_in=6842 user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/140.0.0.0"
+
+2026-09-29 09:17:37 DNS src_ip=10.20.14.57 query=cdn.northstar-hr-support.example type=A response=203.0.113.45
+
+2026-09-29 09:17:37 PROXY action=ALLOW src_ip=10.20.14.57 src_user=[employee@northstar.example](mailto:employee@northstar.example) dst_domain=cdn.northstar-hr-support.example dst_ip=203.0.113.45 method=GET uri=/assets/payroll.js status=200 bytes_out=418 bytes_in=9217 user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/140.0.0.0"
+
+2026-09-29 09:17:38 PROXY action=ALLOW src_ip=10.20.14.57 src_user=[employee@northstar.example](mailto:employee@northstar.example) dst_domain=northstar-hr-support.example dst_ip=203.0.113.45 method=POST uri=/collect status=200 bytes_out=1278 bytes_in=431 user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/140.0.0.0"
+
+2026-09-29 09:17:41 DNS src_ip=10.20.14.57 query=login.northstar-hr-support.example type=A response=203.0.113.45
+
+2026-09-29 09:17:41 PROXY action=ALLOW src_ip=10.20.14.57 src_user=[employee@northstar.example](mailto:employee@northstar.example) dst_domain=login.northstar-hr-support.example dst_ip=203.0.113.45 method=GET uri=/signin status=200 bytes_out=693 bytes_in=11873 user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/140.0.0.0"
+
+2026-09-29 09:17:42 PROXY action=DENY src_ip=10.20.14.57 src_user=[employee@northstar.example](mailto:employee@northstar.example) dst_domain=198.51.100.200 dst_ip=198.51.100.200 method=POST uri=/telemetry/submit reason=threat-intelligence-block
+
+2026-09-29 09:18:03 PROXY action=ALLOW src_ip=10.20.14.57 src_user=[employee@northstar.example](mailto:employee@northstar.example) dst_domain=[www.google.com](http://www.google.com) dst_ip=142.250.72.36 method=GET uri=/search?q=direct+deposit+verification status=200 bytes_out=912 bytes_in=28451 user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/140.0.0.0"
+
+2026-09-29 09:18:17 DNS src_ip=10.20.14.57 query=northstar-hr-support.example type=A response=203.0.113.45
+
+2026-09-29 09:18:18 PROXY action=DENY src_ip=10.20.14.57 src_user=[employee@northstar.example](mailto:employee@northstar.example) dst_domain=northstar-hr-support.example dst_ip=203.0.113.45 method=GET uri=/payroll/verify reason=threat-intelligence-block
+
+2026-09-29 09:18:22 PROXY action=ALLOW src_ip=10.20.14.57 src_user=[employee@northstar.example](mailto:employee@northstar.example) dst_domain=[www.northstar.example](http://www.northstar.example) dst_ip=192.0.2.25 method=GET uri=/security/report-phishing status=200 bytes_out=721 bytes_in=9312 user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/140.0.0.0"
+
+# End of telemetry

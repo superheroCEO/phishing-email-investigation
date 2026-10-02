@@ -1,0 +1,39 @@
+# Identity Telemetry Log
+
+# Source
+
+# Simulated Entra ID / identity provider authentication telemetry
+
+# Investigation window: 2026-09-29 09:00:00 - 10:30:00 -0700
+
+2026-09-29 09:16:58 AUTH user=[employee@northstar.example](mailto:employee@northstar.example) src_ip=10.20.14.57 application="Microsoft 365" auth_method="Password" result=SUCCESS device="WIN-EMP-042" location="Los Angeles, CA" user_agent="Chrome/140.0.0.0"
+
+2026-09-29 09:17:44 AUTH user=[employee@northstar.example](mailto:employee@northstar.example) src_ip=203.0.113.45 application="Microsoft 365" auth_method="Password" result=FAILURE failure_reason="Invalid username or password" device="Unknown" location="Unknown" user_agent="Chrome/140.0.0.0"
+
+2026-09-29 09:17:46 AUTH user=[employee@northstar.example](mailto:employee@northstar.example) src_ip=203.0.113.45 application="Microsoft 365" auth_method="Password" result=FAILURE failure_reason="Invalid username or password" device="Unknown" location="Unknown" user_agent="Chrome/140.0.0.0"
+
+2026-09-29 09:17:49 AUTH user=[employee@northstar.example](mailto:employee@northstar.example) src_ip=203.0.113.45 application="Microsoft 365" auth_method="Password" result=FAILURE failure_reason="Invalid username or password" device="Unknown" location="Unknown" user_agent="Chrome/140.0.0.0"
+
+2026-09-29 09:17:54 AUTH user=[employee@northstar.example](mailto:employee@northstar.example) src_ip=203.0.113.45 application="Microsoft 365" auth_method="Password" result=FAILURE failure_reason="Invalid username or password" device="Unknown" location="Unknown" user_agent="Chrome/140.0.0.0"
+
+2026-09-29 09:18:02 AUTH user=[employee@northstar.example](mailto:employee@northstar.example) src_ip=203.0.113.45 application="Microsoft 365" auth_method="Password" result=FAILURE failure_reason="Invalid username or password" device="Unknown" location="Unknown" user_agent="Chrome/140.0.0.0"
+
+2026-09-29 09:18:11 AUTH user=[employee@northstar.example](mailto:employee@northstar.example) src_ip=10.20.14.57 application="Microsoft 365" auth_method="TokenRefresh" result=SUCCESS device="WIN-EMP-042" location="Los Angeles, CA" user_agent="Chrome/140.0.0.0"
+
+2026-09-29 09:22:41 AUTH user=[employee@northstar.example](mailto:employee@northstar.example) src_ip=10.20.14.57 application="Microsoft 365" auth_method="TokenRefresh" result=SUCCESS device="WIN-EMP-042" location="Los Angeles, CA" user_agent="Chrome/140.0.0.0"
+
+2026-09-29 09:31:07 AUTH user=[employee@northstar.example](mailto:employee@northstar.example) src_ip=203.0.113.45 application="Microsoft 365" auth_method="Password" result=FAILURE failure_reason="Invalid username or password" device="Unknown" location="Unknown" user_agent="curl/8.10.1"
+
+2026-09-29 09:31:13 AUTH user=[employee@northstar.example](mailto:employee@northstar.example) src_ip=203.0.113.45 application="Microsoft 365" auth_method="Password" result=FAILURE failure_reason="Invalid username or password" device="Unknown" location="Unknown" user_agent="curl/8.10.1"
+
+2026-09-29 09:31:26 AUTH user=[employee@northstar.example](mailto:employee@northstar.example) src_ip=203.0.113.45 application="Microsoft 365" auth_method="Password" result=FAILURE failure_reason="Invalid username or password" device="Unknown" location="Unknown" user_agent="curl/8.10.1"
+
+2026-09-29 09:44:51 AUTH user=[employee@northstar.example](mailto:employee@northstar.example) src_ip=10.20.14.57 application="Microsoft 365" auth_method="TokenRefresh" result=SUCCESS device="WIN-EMP-042" location="Los Angeles, CA" user_agent="Chrome/140.0.0.0"
+
+2026-09-29 10:02:18 AUTH user=[employee@northstar.example](mailto:employee@northstar.example) src_ip=10.20.14.57 application="Microsoft 365" auth_method="TokenRefresh" result=SUCCESS device="WIN-EMP-042" location="Los Angeles, CA" user_agent="Chrome/140.0.0.0"
+
+2026-09-29 10:17:32 AUTH user=[employee@northstar.example](mailto:employee@northstar.example) src_ip=10.20.14.57 application="Microsoft 365" auth_method="TokenRefresh" result=SUCCESS device="WIN-EMP-042" location="Los Angeles, CA" user_agent="Chrome/140.0.0.0"
+
+2026-09-29 10:26:14 AUTH user=[employee@northstar.example](mailto:employee@northstar.example) src_ip=203.0.113.45 application="Microsoft 365" auth_method="Password" result=FAILURE failure_reason="Invalid username or password" device="Unknown" location="Unknown" user_agent="curl/8.10.1"
+
+# End of telemetry
